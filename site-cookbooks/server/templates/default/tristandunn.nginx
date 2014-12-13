@@ -1,0 +1,3 @@
+server {
+  root /var/www/tristandunn.com/current/_site;
+}
