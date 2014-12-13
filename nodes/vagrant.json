@@ -1,6 +1,7 @@
 {
   "run_list" : [
     "recipe[user]",
+    "recipe[ruby]",
     "recipe[server]"
   ],
 
@@ -13,6 +14,10 @@
     },
 
     "default_site_enabled" : false
+  },
+
+  "ruby" : {
+    "version" : "2.1.5"
   },
 
   "user" : "deploy"
