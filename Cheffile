@@ -1,5 +1,6 @@
 site 'http://community.opscode.com/api/v1'
 
+cookbook "fail2ban"
 cookbook "monit-ng"
 cookbook "nginx"
 cookbook "rbenv"

@@ -1,6 +1,7 @@
 {
   "run_list" : [
     "recipe[user]",
+    "recipe[fail2ban]",
     "recipe[ruby]",
     "recipe[server]",
     "recipe[monit]",
