@@ -37,6 +37,7 @@ SITE
       build-essential (>= 0.0.0)
       yum (~> 3.0)
       yum-epel (>= 0.0.0)
+    timezone-ii (0.2.0)
     ubuntu (1.1.8)
       apt (>= 0.0.0)
     windows (1.34.8)
@@ -49,4 +50,5 @@ DEPENDENCIES
   monit-ng (>= 0)
   nginx (>= 0)
   rbenv (>= 0)
+  timezone-ii (>= 0)
 

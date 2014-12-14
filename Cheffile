@@ -3,3 +3,4 @@ site 'http://community.opscode.com/api/v1'
 cookbook "monit-ng"
 cookbook "nginx"
 cookbook "rbenv"
+cookbook "timezone-ii"

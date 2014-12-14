@@ -3,7 +3,8 @@
     "recipe[user]",
     "recipe[ruby]",
     "recipe[server]",
-    "recipe[monit]"
+    "recipe[monit]",
+    "recipe[timezone-ii]"
   ],
 
   "nginx" : {
@@ -20,6 +21,8 @@
   "ruby" : {
     "version" : "2.1.5"
   },
+
+  "tz" : "America/Chicago",
 
   "user" : "deploy"
 }
