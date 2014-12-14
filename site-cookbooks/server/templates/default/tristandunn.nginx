@@ -1,5 +1,12 @@
 server {
+  server_name ~^www\.(.*)$;
+
+  return 301 $scheme://$1$request_uri;
+}
+
+server {
   root /var/www/tristandunn.com/current/_site;
+  server_name tristandunn.com tristandunn.local;
 
   charset UTF-8;
 
