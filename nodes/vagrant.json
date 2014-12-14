@@ -4,6 +4,7 @@
     "recipe[fail2ban]",
     "recipe[ruby]",
     "recipe[server]",
+    "recipe[sshd]",
     "recipe[monit]",
     "recipe[timezone-ii]"
   ],
@@ -23,6 +24,12 @@
 
   "ruby" : {
     "version" : "2.1.5"
+  },
+
+  "sshd" : {
+    "sshd_config" : {
+      "PasswordAuthentication" : "no"
+    }
   },
 
   "tz" : "America/Chicago",
