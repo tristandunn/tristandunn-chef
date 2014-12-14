@@ -2,7 +2,8 @@
   "run_list" : [
     "recipe[user]",
     "recipe[ruby]",
-    "recipe[server]"
+    "recipe[server]",
+    "recipe[monit]"
   ],
 
   "nginx" : {

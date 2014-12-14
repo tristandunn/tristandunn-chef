@@ -14,6 +14,11 @@ SITE
       windows (>= 0.0.0)
       yum (~> 3.0)
       yum-epel (>= 0.0.0)
+    monit-ng (1.4.0)
+      apt (>= 0.0.0)
+      build-essential (>= 0.0.0)
+      ubuntu (>= 0.0.0)
+      yum-epel (>= 0.0.0)
     nginx (2.7.4)
       apt (~> 2.2)
       bluepill (~> 2.3)
@@ -32,6 +37,8 @@ SITE
       build-essential (>= 0.0.0)
       yum (~> 3.0)
       yum-epel (>= 0.0.0)
+    ubuntu (1.1.8)
+      apt (>= 0.0.0)
     windows (1.34.8)
       chef_handler (>= 0.0.0)
     yum (3.5.1)
@@ -39,6 +46,7 @@ SITE
       yum (~> 3.0)
 
 DEPENDENCIES
+  monit-ng (>= 0)
   nginx (>= 0)
   rbenv (>= 0)
 
