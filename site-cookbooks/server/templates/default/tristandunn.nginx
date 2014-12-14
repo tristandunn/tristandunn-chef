@@ -1,3 +1,13 @@
 server {
   root /var/www/tristandunn.com/current/_site;
+
+  charset UTF-8;
+
+  location ~ ^/assets/ {
+    gzip_vary on;
+    gzip_static on;
+
+    add_header ETag "";
+    add_header Cache-Control "public; max-age=315360000";
+  }
 }
