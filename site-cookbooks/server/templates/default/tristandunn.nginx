@@ -1,7 +1,7 @@
 server {
-  server_name ~^www\.(.*)$;
+  server_name www.tristandunn.com;
 
-  return 301 $scheme://$1$request_uri;
+  return 301 http://tristandunn.com$request_uri;
 }
 
 server {
