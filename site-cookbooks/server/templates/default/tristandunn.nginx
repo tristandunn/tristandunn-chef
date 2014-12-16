@@ -6,6 +6,8 @@ server {
 
 server {
   root /var/www/tristandunn.com/current/_site;
+
+  listen 80;
   server_name tristandunn.com tristandunn.local;
 
   charset UTF-8;

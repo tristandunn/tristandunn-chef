@@ -7,7 +7,12 @@ end
 template "tristandunn" do
   path   "#{node[:nginx][:dir]}/sites-available/tristandunn"
   owner  node[:user]
-  source "tristandunn.nginx"
+
+  if File.exist?("/etc/ssl/tristandunn.com.crt")
+    source "tristandunn.ssl.nginx"
+  else
+    source "tristandunn.nginx"
+  end
 
   notifies :reload, "service[nginx]"
 end
