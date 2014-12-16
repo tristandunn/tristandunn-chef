@@ -12,6 +12,8 @@ server {
 
   charset UTF-8;
 
+  error_page 404 404.html;
+
   location ~ ^/assets/ {
     expires max;
 

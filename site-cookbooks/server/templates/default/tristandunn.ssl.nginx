@@ -19,6 +19,8 @@ server {
 
   charset UTF-8;
 
+  error_page 404 /404.html;
+
   ssl on;
   ssl_session_cache shared:SSL:10m;
   ssl_session_timeout 24h;
