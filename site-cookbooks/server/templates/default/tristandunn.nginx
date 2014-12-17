@@ -14,12 +14,16 @@ server {
 
   error_page 404 404.html;
 
-  location ~ ^/assets/ {
+  location ~ "^/assets/" {
     expires max;
 
     gzip_vary on;
     gzip_static on;
 
     add_header ETag "";
+  }
+
+  location ~ "^/\d{4}\/\d{2}\/\d{2}\/[^\/]+.html" {
+    rewrite ^(.+).html$ $1/ permanent;
   }
 }
