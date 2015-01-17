@@ -26,4 +26,8 @@ server {
   location ~ "^/\d{4}\/\d{2}\/\d{2}\/[^\/]+.html" {
     rewrite ^(.+).html$ $1/ permanent;
   }
+
+  location ~ "^/projects/jquery-auto-geocoder" {
+    rewrite ^ https://github.com/tristandunn/jquery-auto-geocoder permanent;
+  }
 }
