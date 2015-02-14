@@ -27,6 +27,14 @@ server {
     rewrite ^(.+).html$ $1/ permanent;
   }
 
+  location ~ "^/github-voice" {
+    rewrite ^ https://github.com/tristandunn/github-voice permanent;
+  }
+
+  location ~ "^/projects/github-voice" {
+    rewrite ^ https://github.com/tristandunn/github-voice permanent;
+  }
+
   location ~ "^/projects/jquery-auto-geocoder" {
     rewrite ^ https://github.com/tristandunn/jquery-auto-geocoder permanent;
   }
