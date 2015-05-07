@@ -76,4 +76,8 @@ server {
   location ~ "^/projects/jquery-auto-geocoder" {
     rewrite ^ https://github.com/tristandunn/jquery-auto-geocoder permanent;
   }
+
+  location ~ "^/(articles|projects/box-seat)" {
+    rewrite ^ https://tristandunn.com permanent;
+  }
 }
