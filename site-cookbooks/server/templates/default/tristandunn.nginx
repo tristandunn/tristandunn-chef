@@ -15,13 +15,12 @@ server {
   error_page 404 404.html;
 
   location ~ "^/assets/" {
-    expires max;
-
     gzip_vary on;
     gzip_static on;
 
     add_header ETag "";
-    add_header Cache-Control "public";
+    add_header Expires "Thu, 31 Dec 2037 23:55:55 GMT";
+    add_header Cache-Control "public; max-age=315360000";
   }
 
   location ~ "^/\d{4}\/\d{2}\/\d{2}\/[^\/]+.html" {
