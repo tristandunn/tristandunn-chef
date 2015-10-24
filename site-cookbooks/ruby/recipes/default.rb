@@ -1,3 +1,5 @@
+ENV["RUBY_CONFIGURE_OPTS"] = "--disable-install-doc"
+
 include_recipe "rbenv::default"
 include_recipe "rbenv::ruby_build"
 
