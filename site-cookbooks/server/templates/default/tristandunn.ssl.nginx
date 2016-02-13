@@ -49,7 +49,9 @@ server {
   add_header Alternate-Protocol 443:npn-spdy/3;
   add_header Strict-Transport-Security max-age=63072000;
   add_header X-Frame-Options DENY;
+  add_header X-XSS-Protection "1; mode=block";
   add_header X-Content-Type-Options nosniff;
+  add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' data: https://www.google-analytics.com; img-src 'self' https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; object-src 'none'";
 
   location ~ "^/assets/" {
     gzip_vary on;
