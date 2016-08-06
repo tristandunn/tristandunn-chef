@@ -7,9 +7,6 @@ The Chef recipes used for my personal website.
 The `vagrant-trigger` plug-in is used to achieve sane port forwarding. See the triggers in the [Vagrantfile][].
 
 ```sh
-# If you're using Homebrew you'll probably need this variable.
-$ export NOKOGIRI_USE_SYSTEM_LIBRARIES=1
-
 $ vagrant plugin install vagrant-triggers
 ```
 
