@@ -20,3 +20,13 @@ end
 nginx_site "tristandunn" do
   enable true
 end
+
+apt_package "libssl1.0.0" do
+  action   :upgrade
+  notifies :restart, "service[nginx]"
+end
+
+apt_package "openssl" do
+  action   :upgrade
+  notifies :restart, "service[nginx]"
+end
